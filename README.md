@@ -1,4 +1,4 @@
-Going to start with this [Nasa App](https://scotch.io/tutorials/make-a-stellar-react-nasa-app-in-10-minutes)
+Going to start with this [NASA App](https://scotch.io/tutorials/make-a-stellar-react-nasa-app-in-10-minutes)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
