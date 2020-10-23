@@ -26,6 +26,12 @@ export default function NasaPhoto() {
     <>
 
     <div className="nasa-photo">
+      <p></p>
+      <div>This page uses the NASA API for APOD (Astronomy Picture
+        of the Day) at https://api.nasa.gov/planetary/apod.
+        
+      </div>
+      <p></p>
       {photoData.media_type === "image" ? (
         <img
           src={photoData.url}
@@ -48,6 +54,7 @@ export default function NasaPhoto() {
         <p className="date">{photoData.date}</p>
         <p className="explanation">{photoData.explanation}</p>
       </div>
+      <div>" "</div>
     </div>
     </>
   );
