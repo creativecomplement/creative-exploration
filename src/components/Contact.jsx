@@ -1,8 +1,8 @@
 import React from "react";
 
-function Home() {
+function Contact() {
   return (
-    <div className="home">
+    <div className="contact">
       <div class="container">
         <div class="row align-items-center my-5">
           <div class="col-lg-7">
@@ -13,9 +13,9 @@ function Home() {
             />
           </div>
           <div class="col-lg-5">
-            <h1 class="font-weight-light">Home</h1>
+            <h1 class="font-weight-light">Contact</h1>
             <p>
-              Start page with initial introduction!
+              So this is my contact page: donald@creativecomplement.com
             </p>
           </div>
         </div>
@@ -24,4 +24,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Contact;
