@@ -1,5 +1,11 @@
 // src/components/NasaPhoto.js
 
+//Sync'd this evening 10/23/2020 to home, not able to run the NASA image
+//First, needed to create the .env file with the key because I .gitignore that
+//Then it still does not work. I went to api.nasa.gov and tested both the 
+// my key then the demo_key. They are trying to return data/image for 
+// 10/24/2020. That is on the API end of things.
+//**** I need to add a null check and return a default value *****/
 import React, { useState, useEffect } from "react";
 
 const apiKey = process.env.REACT_APP_NASA_KEY;

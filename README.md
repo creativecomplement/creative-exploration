@@ -1,3 +1,5 @@
+See notes in .components/Nasa.jsx about api not loading correcly.
+
 Going to start with this [NASA App](https://scotch.io/tutorials/make-a-stellar-react-nasa-app-in-10-minutes)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
