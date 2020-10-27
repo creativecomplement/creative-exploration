@@ -2,6 +2,8 @@ import React, { Component } from "react";
 
 const apiKey = process.env.REACT_APP_SHEETS_KEY;
 
+const sheetID = process.env.REACT_APP_SHEETS_ID;
+
 /* 
 For me: don't forget the .env updates
 
