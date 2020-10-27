@@ -10,7 +10,7 @@ import React, { useState, useEffect } from "react";
 
 const apiKey = process.env.REACT_APP_NASA_KEY;
 
-export default function NasaPhoto() {
+function NasaPhoto() {
   const [photoData, setPhotoData] = useState(null);
 
   useEffect(() => {
@@ -65,3 +65,5 @@ export default function NasaPhoto() {
     </>
   );
 }
+
+export default NasaPhoto;

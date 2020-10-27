@@ -6,8 +6,7 @@ const apiKey = process.env.REACT_APP_SHEETS_KEY;
 
 const sheetID = process.env.REACT_APP_SHEETS_ID;
 
-const url = `https://sheets.googleapis.com/v4/spreadsheets/${sheetID}
-    /values:batchGet?ranges=Sheet1&majorDimension=ROWS&key=${apiKey}`;
+const url = `https://sheets.googleapis.com/v4/spreadsheets/${sheetID}/values:batchGet?ranges=Sheet1&majorDimension=ROWS&key=${apiKey}`;
 
     class Sheets extends Component {
         constructor() {
