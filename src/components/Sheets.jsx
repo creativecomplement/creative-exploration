@@ -175,84 +175,68 @@ const url = `https://sheets.googleapis.com/v4/spreadsheets/${sheetID}/values:bat
           render() {
             
               return (
-                <Container>
+                <div>
                 {/* content area start */}
-                <Container className="container-fluid pr-5 pl-5 pt-5 pb-5">
+                <div className="container-fluid bg-dark">
                 {/* row 1 - revenue */}
-                <Container className="row">
-                    <Container className="col-lg-3 col-sm-6 is-light-text mb-4">
-                    <Container className="card grid-card is-card-dark">
-                        <Container className="card-heading">
-                        <Container className="is-dark-text-light letter-spacing text-small">
+                <div className="row">
+                    <div className="col-lg-3 col-sm-6">
+                    <div className="card text-white bg-secondary mb-3">
+                        <div className="card-header">
                             Total Revenue
-                        </Container>
-                        </Container>
+                        </div>
 
-                        <Container className="card-value pt-4 text-x-large">
-                        <span className="text-large pr-1">$</span>
-                        {this.state.totalRevenue}
-                        </Container>
-                    </Container>
-                    </Container>
+                        <div className="card-body"><h2>
+                            <span className="card-text small">$</span>
+                            {this.state.totalRevenue}
+                            </h2>
+                        </div>
+                    </div>
+                    </div>
 
-                    <Container className="col-lg-3 col-sm-6 is-light-text mb-4">
-                    <Container className="card grid-card is-card-dark">
-                        <Container className="card-heading">
-                        <Container className="is-dark-text-light letter-spacing text-small">
+                    <div className="col-lg-3 col-sm-6">
+                    <div className="card text-white bg-secondary mb-3">
+                        <div className="card-header">
                             Revenue from Amazon
-                        </Container>
-                        <Container className="card-heading-brand">
-                            <i className="fab fa-amazon text-large" />
-                        </Container>
-                        </Container>
-
-                        <Container className="card-value pt-4 text-x-large">
-                        <span className="text-large pr-1">$</span>
+                        </div>
+                        <div className="card-body"><h2>
+                            <span className="card-text small">$</span>
                         {this.state.amRevenue}
-                        </Container>
-                    </Container>
-                    </Container>
+                        </h2>
+                        </div>
+                    </div>
+                    </div>
 
-                    <Container className="col-lg-3 col-sm-6 is-light-text mb-4">
-                    <Container className="card grid-card is-card-dark">
-                        <Container className="card-heading">
-                        <Container className="is-dark-text-light letter-spacing text-small">
+                    <div className="col-lg-3 col-sm-6">
+                    <div className="card text-white bg-secondary mb-3">
+                        <div className="card-header">
                             Revenue from Ebay
-                        </Container>
-                        <Container className="card-heading-brand">
-                            <i className="fab fa-ebay text-x-large logo-adjust" />
-                        </Container>
-                        </Container>
-
-                        <Container className="card-value pt-4 text-x-large">
-                        <span className="text-large pr-1">$</span>
+                        </div>
+                        <div className="card-body"><h2>
+                            <span className="card-text small">$</span>
                         {this.state.ebRevenue}
-                        </Container>
-                    </Container>
-                    </Container>
+                        </h2>
+                        </div>
+                    </div>
+                    </div>
 
-                    <Container className="col-lg-3 col-sm-6 is-light-text mb-4">
-                    <Container className="card grid-card is-card-dark">
-                        <Container className="card-heading">
-                        <Container className="is-dark-text-light letter-spacing text-small">
+                    <div className="col-lg-3 col-sm-6">
+                    <div className="card text-white bg-secondary mb-3">
+                        <div className="card-header">
                             Revenue from Etsy
-                        </Container>
-                        <Container className="card-heading-brand">
-                            <i className="fab fa-etsy text-medium" />
-                        </Container>
-                        </Container>
-
-                        <Container className="card-value pt-4 text-x-large">
-                        <span className="text-large pr-1">$</span>
+                        </div>
+                        <div className="card-body"><h2>
+                            <span className="card-text small">$</span>
                         {this.state.etRevenue}
-                        </Container>
-                    </Container>
-                    </Container>
-                </Container>
+                        </h2>
+                        </div>
+                    </div>
+                    </div>
+                </div>
 
-                </Container>
+                </div>
                 {/* content area end */}
-                </Container>
+                </div>
               );
           }
         }
@@ -274,4 +258,6 @@ react-dropdown (https://www.npmjs.com/package/react-dropdown)
 
  need to install styled-components, thought this may be so from the referenced
  file in the project, in styled-components.js file.
+
+ fixing the layout above, should maybe use card-deck...
 */
