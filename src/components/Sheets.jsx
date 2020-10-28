@@ -254,7 +254,7 @@ const url = `https://sheets.googleapis.com/v4/spreadsheets/${sheetID}/values:bat
                   );
                 }
               }
-                
+
         export default Sheets;
 /* 
 For me: don't forget the .env updates

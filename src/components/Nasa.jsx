@@ -10,6 +10,10 @@ import React, { useState, useEffect } from "react";
 
 const apiKey = process.env.REACT_APP_NASA_KEY;
 
+var date = new Date();
+
+const theDate = date.getFullYear() + "-" + (date.getMonth() + 1) + "-" + date.getDate();
+
 function NasaPhoto() {
   const [photoData, setPhotoData] = useState(null);
 
@@ -18,7 +22,7 @@ function NasaPhoto() {
 
     async function fetchPhoto() {
       const res = await fetch(
-        `https://api.nasa.gov/planetary/apod?api_key=${apiKey}`
+        `https://api.nasa.gov/planetary/apod?api_key=${apiKey}&date=${theDate}`
       );
       const data = await res.json();
       setPhotoData(data);
