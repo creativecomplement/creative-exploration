@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import formatNum from "./format-number";
+import { Container } from "./styled-components";
 
 const apiKey = process.env.REACT_APP_SHEETS_KEY;
 
@@ -174,73 +175,86 @@ const url = `https://sheets.googleapis.com/v4/spreadsheets/${sheetID}/values:bat
           render() {
             
               return (
-                <div>
+                <Container>
                 {/* content area start */}
-                <div className="container-fluid bg-dark">
-                {/* row 1 - revenue */}
-                <div className="row">
-                    <div className="col-lg-3 col-sm-6">
-                    <div className="card text-white bg-secondary mb-3">
-                        <div className="card-header">
+                <Container className="container-fluid pr-5 pl-5 pt-5 pb-5">
+                  {/* row 1 - revenue */}
+                  <Container className="row">
+                    <Container className="col-lg-3 col-sm-6 is-light-text mb-4">
+                      <Container className="card grid-card is-card-dark">
+                        <Container className="card-heading">
+                          <Container className="is-dark-text-light letter-spacing text-small">
                             Total Revenue
-                        </div>
+                          </Container>
+                        </Container>
 
-                        <div className="card-body"><h2>
-                            <span className="card-text small">$</span>
-                            {this.state.totalRevenue}
-                            </h2>
-                        </div>
-                    </div>
-                    </div>
+                        <Container className="card-value pt-4 text-x-large">
+                          <span className="text-large pr-1">$</span>
+                          {this.state.totalRevenue}
+                        </Container>
+                      </Container>
+                    </Container>
 
-                    <div className="col-lg-3 col-sm-6">
-                    <div className="card text-white bg-secondary mb-3">
-                        <div className="card-header">
+                    <Container className="col-lg-3 col-sm-6 is-light-text mb-4">
+                      <Container className="card grid-card is-card-dark">
+                        <Container className="card-heading">
+                          <Container className="is-dark-text-light letter-spacing text-small">
                             Revenue from Amazon
-                        </div>
-                        <div className="card-body"><h2>
-                            <span className="card-text small">$</span>
-                        {this.state.amRevenue}
-                        </h2>
-                        </div>
-                    </div>
-                    </div>
+                          </Container>
+                          <Container className="card-heading-brand">
+                            <i className="fab fa-amazon text-large" />
+                          </Container>
+                        </Container>
 
-                    <div className="col-lg-3 col-sm-6">
-                    <div className="card text-white bg-secondary mb-3">
-                        <div className="card-header">
+                        <Container className="card-value pt-4 text-x-large">
+                          <span className="text-large pr-1">$</span>
+                          {this.state.amRevenue}
+                        </Container>
+                      </Container>
+                    </Container>
+
+                    <Container className="col-lg-3 col-sm-6 is-light-text mb-4">
+                      <Container className="card grid-card is-card-dark">
+                        <Container className="card-heading">
+                          <Container className="is-dark-text-light letter-spacing text-small">
                             Revenue from Ebay
-                        </div>
-                        <div className="card-body"><h2>
-                            <span className="card-text small">$</span>
-                        {this.state.ebRevenue}
-                        </h2>
-                        </div>
-                    </div>
-                    </div>
+                          </Container>
+                          <Container className="card-heading-brand">
+                            <i className="fab fa-ebay text-x-large logo-adjust" />
+                          </Container>
+                        </Container>
 
-                    <div className="col-lg-3 col-sm-6">
-                    <div className="card text-white bg-secondary mb-3">
-                        <div className="card-header">
+                        <Container className="card-value pt-4 text-x-large">
+                          <span className="text-large pr-1">$</span>
+                          {this.state.ebRevenue}
+                        </Container>
+                      </Container>
+                    </Container>
+
+                    <Container className="col-lg-3 col-sm-6 is-light-text mb-4">
+                      <Container className="card grid-card is-card-dark">
+                        <Container className="card-heading">
+                          <Container className="is-dark-text-light letter-spacing text-small">
                             Revenue from Etsy
-                        </div>
-                        <div className="card-body"><h2>
-                            <span className="card-text small">$</span>
-                        {this.state.etRevenue}
-                        </h2>
-                        </div>
-                    </div>
-                    </div>
-                </div>
+                          </Container>
+                          <Container className="card-heading-brand">
+                            <i className="fab fa-etsy text-medium" />
+                          </Container>
+                        </Container>
 
-                </div>
-                {/* content area end */}
-                </div>
-              );
-          }
-        }
-
-        
+                        <Container className="card-value pt-4 text-x-large">
+                          <span className="text-large pr-1">$</span>
+                          {this.state.etRevenue}
+                        </Container>
+                      </Container>
+                    </Container>
+                  </Container>
+                  </Container>
+                  </Container>
+                  );
+                }
+              }
+                
         export default Sheets;
 /* 
 For me: don't forget the .env updates

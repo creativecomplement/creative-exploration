@@ -6,7 +6,7 @@ function Navigation(props) {
     <div className="navigation">
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container">
-          <Link className="navbar-brand" to="/">
+          <Link className="navbar-brand text-x-large" to="/">
             Creative Complement
           </Link>
           <button
