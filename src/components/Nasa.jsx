@@ -37,11 +37,6 @@ function NasaPhoto() {
 
     <div className="nasa-photo">
       <p></p>
-      <div>This page uses the NASA API for APOD (Astronomy Picture
-        of the Day) at https://api.nasa.gov/planetary/apod.
-        
-      </div>
-      <p></p>
       {photoData.media_type === "image" ? (
         <img
           src={photoData.url}
