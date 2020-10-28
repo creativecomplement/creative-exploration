@@ -15,6 +15,9 @@ code {
 /* font faces  and sheets styles begin here*/
 
 /* typography styles */
+.creative-complement-text {
+  color: rgb(90, 199, 172);
+}
 .is-dark-text {
   color: rgb(67, 68, 86);
 }

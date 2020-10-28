@@ -7,7 +7,7 @@ function Navigation(props) {
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container">
           <Link className="navbar-brand text-x-large" to="/">
-            Creative Complement
+            <span className="creative-complement-text">Creative Complement</span>
           </Link>
           <button
             className="navbar-toggler"
@@ -28,7 +28,7 @@ function Navigation(props) {
                 }`}
               >
                 <Link className="nav-link" to="/">
-                  Home
+                  <span className="creative-complement-text">Home</span>
                   <span className="sr-only">(current)</span>
                 </Link>
               </li>
@@ -38,7 +38,7 @@ function Navigation(props) {
                 }`}
               >
                 <Link className="nav-link" to="/about">
-                  About
+                <span className="creative-complement-text">About</span>
                 </Link>
               </li>
               <li
@@ -47,7 +47,7 @@ function Navigation(props) {
                 }`}
               >
                 <Link className="nav-link" to="/nasa">
-                  Nasa
+                <span className="creative-complement-text">Nasa</span>
                 </Link>
               </li>
               <li
@@ -56,7 +56,7 @@ function Navigation(props) {
                 }`}
               >
                 <Link className="nav-link" to="/sheets">
-                  Sheets
+                <span className="creative-complement-text">Sheets</span>
                 </Link>
               </li>
               <li
@@ -65,7 +65,7 @@ function Navigation(props) {
                 }`}
               >
                 <Link className="nav-link" to="/contact">
-                  Contact
+                <span className="creative-complement-text">Contact</span>
                 </Link>
               </li>
             </ul>
