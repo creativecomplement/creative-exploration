@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import formatNum from "./format-number";
-import { Container } from "./styled-components";
 
 const apiKey = process.env.REACT_APP_SHEETS_KEY;
 
