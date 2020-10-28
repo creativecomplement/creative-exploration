@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import formatNum from "./format-number";
-import { Container } from "./styled-components";
+import { Container, Nav } from "./styled-components";
+import Dropdown from "react-dropdown";
 
 const apiKey = process.env.REACT_APP_SHEETS_KEY;
 
@@ -176,6 +177,19 @@ const url = `https://sheets.googleapis.com/v4/spreadsheets/${sheetID}/values:bat
             
               return (
                 <Container>
+                          {/* static navbar - bottom */}
+                <Nav className="navbar bg-dark is-dark is-light-text">
+                  <Container className="text-medium"></Container>
+                  <Container className="navbar-nav ml-auto back">
+                    <Dropdown
+                      className="pr-2 custom-dropdown"
+                      options={this.state.dropdownOptions}
+                      onChange={this.updateDashboard}
+                      value={this.state.selectedValue}
+                      placeholder="Select an option"
+                    />
+                  </Container>
+                </Nav>
                 {/* content area start */}
                 <Container className="container-fluid pr-5 pl-5 pt-5 pb-5">
                   {/* row 1 - revenue */}
@@ -271,6 +285,8 @@ react-dropdown (https://www.npmjs.com/package/react-dropdown)
 
  need to install styled-components, thought this may be so from the referenced
  file in the project, in styled-components.js file.
+
+ need to install react-dropdown.
 
  fixing the layout above, should maybe use card-deck...
 */

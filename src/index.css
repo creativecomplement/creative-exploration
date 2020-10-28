@@ -187,9 +187,10 @@ body {
 
 .custom-dropdown {
   border-radius: 4px;
-  background: transparent;
+  background-color: transparent;
   border: 1px solid rgba(193, 204, 222, 0.2);
-  font-family: 'basefont-regular'
+  font-family: 'basefont-regular';
+  max-height: 300px;
 }
 
 .Dropdown-menu {
