@@ -6,8 +6,8 @@ function Navigation(props) {
     <div className="navigation">
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container">
-          <Link className="navbar-brand text-x-large" to="/">
-            <span className="creative-complement-text">Creative Complement</span>
+          <Link className="navbar-brand" to="/">
+            <h1><span className="creative-complement-text">Creative Complement</span></h1>
           </Link>
           <button
             className="navbar-toggler"
