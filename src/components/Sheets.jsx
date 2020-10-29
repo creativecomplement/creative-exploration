@@ -133,6 +133,8 @@ const url = `https://sheets.googleapis.com/v4/spreadsheets/${sheetID}/values:bat
               selectedValue: selectedValue
             });
           };
+
+          /* end of getData */
         
           updateDashboard = event => {
             this.getData(event.value);
@@ -180,7 +182,7 @@ const url = `https://sheets.googleapis.com/v4/spreadsheets/${sheetID}/values:bat
                           {/* static navbar - bottom */}
                 <Nav className="navbar bg-dark is-dark is-light-text">
                   <Container className="text-medium"></Container>
-                  <Container className="navbar-nav ml-auto back">
+                  <Container className="navbar-nav ml-auto">
                     <Dropdown
                       className="pr-2 custom-dropdown"
                       options={this.state.dropdownOptions}

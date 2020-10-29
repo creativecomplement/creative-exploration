@@ -26,15 +26,13 @@ function NasaPhoto() {
       );
       const data = await res.json();
       setPhotoData(data);
-      console.log(data);
+      //console.log(data);
     }
   }, []);
 
   if (!photoData) return <div />;
 
   return (
-    <>
-
     <div className="nasa-photo pl-3">
       <p></p>
       {photoData.media_type === "image" ? (
@@ -61,7 +59,6 @@ function NasaPhoto() {
       </div>
       <div>" "</div>
     </div>
-    </>
   );
 }
 
