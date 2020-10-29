@@ -35,7 +35,7 @@ function NasaPhoto() {
   return (
     <>
 
-    <div className="nasa-photo">
+    <div className="nasa-photo pl-3">
       <p></p>
       {photoData.media_type === "image" ? (
         <img
