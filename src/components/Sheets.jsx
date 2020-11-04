@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import formatNum from "./format-number";
 import { Container, Nav } from "./styled-components";
 import Dropdown from "react-dropdown";
+import './index.css';
 
 const apiKey = process.env.REACT_APP_SHEETS_KEY;
 
